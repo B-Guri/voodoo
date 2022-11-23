@@ -1,0 +1,76 @@
+.elipse {
+  z-index: -1;
+  position: absolute;
+}
+
+.top-left-elipse {
+  top: -324px;
+  left: calc(50vw - 1090px);
+  background: linear-gradient(90deg, #b79891 0%, #94716b 100%);
+  opacity: 0.2;
+  filter: blur(250px);
+}
+
+.bottom-left-elipse {
+  top: 961px;
+  left: calc(50vw - 1090px);
+  background: linear-gradient(90deg, #6f8488 0%, #6f8488 100%);
+  opacity: 0.2;
+  filter: blur(250px);
+}
+
+.bottom-right-elipse {
+  top: 1390px;
+  left: calc(50vw - 1090px + 1115px);
+  background: linear-gradient(90deg, #b79891 0%, #94716b 100%);
+  opacity: 0.2;
+  filter: blur(250px);
+}
+
+.top_left_elipse_mob {
+  top: -164px;
+  left: calc(50vw - 435px);
+  background: linear-gradient(90deg, #b79891 0%, #d8cfaf 88.54%);
+  opacity: 0.2;
+  filter: blur(250px);
+}
+
+.middle_elipse_mob {
+  top: 590px;
+  left: calc(50vw - 320px);
+  background: linear-gradient(90deg, #b79891 0%, #d8cfaf 88.54%);
+  opacity: 0.2;
+  filter: blur(250px);
+}
+
+.bottom_right_elipse_mob {
+  top: 1856px;
+  left: calc(50vw - 178px);
+  background: linear-gradient(90deg, #b79891 0%, #d8cfaf 88.54%);
+  opacity: 0.2;
+  filter: blur(250px);
+}
+
+.bottom_left_elipse_mob {
+  top: 1300px;
+  left: calc(50vw - 566px);
+  background: linear-gradient(90deg, #6f8488 0%, #6f8488 100%);
+  opacity: 0.2;
+  filter: blur(250px);
+}
+
+.mob {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 670px) {
+  .top-left-elipse,
+  .bottom-left-elipse,
+  .bottom-right-elipse {
+    visibility: hidden;
+  }
+
+  .mob {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/elipses.css" />
+    <script type="module" src="./src/scripts/map.js"></script>
+    <title>VooDoo</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="main">
+        <form class="contact-form">
+          <div class="header">
+            <h3 class="header__title">Contact Us</h3>
+            <p class="header__description">
+              The Voodoo team is looking forward to hearing from you!
+            </p>
+          </div>
+          <div class="contact-form__content">
+            <input
+              type="text"
+              class="contact-form__input"
+              placeholder="Full Name*"
+            />
+            <input
+              type="text"
+              class="contact-form__input"
+              placeholder="Title/Position*"
+            />
+            <select placeholder="Practice / Institution*">
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+              <option>Option 5</option>
+              <option>Option 6</option>
+              <option>Option 7</option>
+            </select>
+            <input
+              type="email"
+              class="contact-form__input"
+              placeholder="Email Address*"
+            />
+            <input
+              type="text"
+              class="contact-form__input"
+              placeholder="Phone Number*"
+            />
+            <select placeholder="Medical Profession*">
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+              <option>Option 5</option>
+            </select>
+            <select placeholder="Type of Inquiry*" fullwidth>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+          </div>
+          <textarea
+            class="contact-form__input contact-form__input-multiline"
+            placeholder="Enter Message*"
+          ></textarea>
+          <button class="contact-form__button">Send Message</button>
+          <div class="info-window" id="infoWindow">
+            <div class="info-window__title">
+              <p class="info-window__title__header">Voodoo</p>
+              <p class="info-window__title__street">
+                Mykhaila Lomonosova St, 73з <br />
+                Ukraine
+              </p>
+            </div>
+            <div>
+              <div class="info-window__contact-info">
+                <img
+                  class="info-window__contact-info__icon"
+                  src="./src/images/phone.svg"
+                  alt="phone"
+                />
+                <a
+                  href="tel:1-800-480-9597"
+                  class="info-window__contact-info__link"
+                >
+                  1-800-480-9597
+                </a>
+              </div>
+              <div class="info-window__contact-info">
+                <img
+                  class="info-window__contact-info__icon"
+                  src="./src/images/mail.svg"
+                  alt="phone"
+                />
+                <a
+                  href="mailto:info@voodoo.com"
+                  class="info-window__contact-info__link"
+                >
+                  info@voodoo.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div id="map" class="map"></div>
+      </div>
+      <div class="background">
+        <svg
+          class="elipse top-left-elipse"
+          viewBox="0 0 851 788"
+          xmlns="http://www.w3.org/2000/svg"
+          width="851"
+          height="788"
+          fill="none"
+        >
+          <ellipse cx="425.5" cy="394" rx="425.5" ry="394" fill="none" />
+        </svg>
+        <svg
+          class="elipse bottom-right-elipse"
+          width="939"
+          height="718"
+          viewBox="0 0 939 718"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse cx="425.5" cy="394" rx="425.5" ry="394" fill="none" />
+        </svg>
+        <svg
+          class="elipse bottom-left-elipse"
+          width="851"
+          height="788"
+          viewBox="0 0 851 788"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse cx="425.5" cy="394" rx="425.5" ry="394" fill="none" />
+        </svg>
+        <!-- Mobile -->
+        <svg
+          class="elipse top_left_elipse_mob mob"
+          width="581"
+          height="538"
+          viewBox="0 0 581 538"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse cx="290.5" cy="269" rx="290.5" ry="269" fill="none" />
+        </svg>
+        <svg
+          class="elipse middle_elipse_mob mob"
+          width="895"
+          height="684"
+          viewBox="0 0 895 684"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse cx="447.5" cy="342" rx="447.5" ry="342" fill="none" />
+        </svg>
+        <svg
+          class="elipse bottom_right_elipse_mob mob"
+          width="681"
+          height="521"
+          viewBox="0 0 681 521"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse cx="340.5" cy="260.5" rx="340.5" ry="260.5" fill="none" />
+        </svg>
+        <svg
+          class="elipse bottom_left_elipse_mob mob"
+          width="851"
+          height="788"
+          viewBox="0 0 851 788"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse cx="425.5" cy="394" rx="425.5" ry="394" fill="none" />
+        </svg>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=initMap&v=weekly"
+    defer
+  ></script>
+  <script src="./src/scripts/replace.js"></script>
+  <script src="./src/scripts/select.js"></script>
+</html>
